@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "user-service"
+version = "0.1.0"
+description = "A user microservice for a mart"
+authors = ["MuhammadHammadBashir0315 <hammad.bashir0315@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+sqlmodel = "^0.0.19"
+psycopg2-binary = "^2.9.9"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.9"
+python-dotenv = "^1.0.1"
+confluent-kafka = "^2.4.0"
+protobuf = "^5.27.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

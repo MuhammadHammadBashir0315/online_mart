@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "notification-service"
+version = "0.1.0"
+description = "A notification microservice for a mart"
+authors = ["MuhammadHammadBashir0315 <hammad.bashir0315@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+sqlmodel = "^0.0.19"
+psycopg2-binary = "^2.9.9"
+aiosmtplib = "^3.0.1"
+pydantic = {extras = ["email"], version = "^2.8.0"}
+confluent-kafka = "^2.4.0"
+protobuf = "^5.27.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
